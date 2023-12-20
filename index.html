@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>contact us</h2>
+        <form id="myform" onsubmit="return validation()" action="contact.php" method="post">
+            <div class="input_field">
+                <input type="text" placeholder="Name" id="name" name="name">  
+                <div id="error_name"></div>
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Phone" id="phone" name="phone">
+                <div id="error_phno"></div>
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Email" id="email" name="email">
+                <div id="error_email"></div>
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Subject" id="subject" name="subject">
+                <div id="error_subj"></div>
+            </div>
+            <div class="input_field">
+                <textarea id="message" placeholder="Message" name="message"></textarea>
+                <div id="error_message"></div>
+            </div>
+            <div class="btn">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
